@@ -48,7 +48,7 @@ int main()
         {
             printf("둔각삼각형입니다.\n");
         }
-    else // not correct triangle condition
+    else // not correct triangle condition (len[0]+len[1] < len[2])
     {
         printf("삼각형이 아닙니다.\n");
     }
