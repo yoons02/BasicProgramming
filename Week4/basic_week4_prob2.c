@@ -1,6 +1,6 @@
 #include <stdio.h> 
-#include <limits.h> // Out put char and integer MAX, MIN header file
-#include <float.h> // Out put float and double MAX, MIN header file
+#include <limits.h> // Output char and integer MAX, MIN header file
+#include <float.h> // Output float and double MAX, MIN header file
 
 int main()
 {
@@ -11,7 +11,7 @@ int main()
 
     c_min = CHAR_MIN; // char minimum valuable
     c_max = CHAR_MAX; // char maximun valuable
- 
+
     i_min = INT_MIN; // integer minimun valuable
     i_max = INT_MAX; // integer maximun valuable
     
