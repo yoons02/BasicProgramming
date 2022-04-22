@@ -13,7 +13,7 @@ int main()
 
     for (i = 0; i < n; i++) // repeat n times, for syntax
     {
-        value *= base; // value = value * base
+        value *= base; // value = value * base 
     }
 
     printf("%d^%d = %d\n", base, n, value);

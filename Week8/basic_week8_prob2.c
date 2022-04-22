@@ -5,7 +5,7 @@ int main()
     char before, after; // char valuable
     int i; // integer valuable
 
-    for (i = 0; i < 5; i++) // repeat 5 times
+    for (i = 0; i < 5; i++) // repeat 5 times 
     {
         printf("Enter the Alphbet (Upper/Lower): ");
         scanf(" %c", &before); // input alphabet and assign

@@ -4,7 +4,7 @@ int main()
 {
     int a, b; // integer valuble
 
-    printf("Enter the number (a,b): ");
+    printf("Enter the number (a,b): "); 
     scanf("%d, %d", &a, &b); // input a,b valuable and asign each
 
     printf("%d+%d=%d\n", a, b, a+b); // print a+b

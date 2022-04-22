@@ -7,7 +7,7 @@ int main()
     printf("Enter the number : "); 
     scanf(" %d", &num); // input value and assign
 
-    for (i = 1; i < 10; i++) // repeat 9 times (1~9)
+    for (i = 1; i < 10; i++) // repeat 9 times (1~9) 
     {
         printf("%d*%d=%3d    ", num, i, num*i);
         if (i == 5)

@@ -15,7 +15,7 @@ int main()
     while (i < n) // while syntax
     {
         value *= base; // value = value * base
-        i++; // i = i + 1
+        i++; // i = i + 1 
     }
 
     printf("%d^%d = %d\n", base, n, value);
