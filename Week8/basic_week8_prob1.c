@@ -2,7 +2,7 @@
 
 int main()
 {
-    int a, b; // integer value
+    int a, b; // integer valuble
 
     printf("Enter the number (a,b): ");
     scanf("%d, %d", &a, &b); // input a,b valuable and asign each
