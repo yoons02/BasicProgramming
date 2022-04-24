@@ -41,43 +41,42 @@ int main()
         printf("Choose the menu : ");
         scanf(" %d", &menu);
 
-        choose:
-        {
-            switch (menu)
-            {
-                case 1:
-                    printf("Enter the number : ");
-                    scanf(" %d", &coka);
-                    total = total + 1200*coka;
-                    printf("Total amount : %d\n", total);
-                    break;
 
-                case 2:
-                    printf("Enter the number : ");
-                    scanf(" %d", &cokazero);
-                    total = total + 1250*cokazero;
-                    printf("Total amount : %d\n", total);
-                    break;
+        switch (menu)
+        {
+            case 1:
+                printf("Enter the number : ");
+                scanf(" %d", &coka);
+                total = total + 1200*coka;
+                printf("Total amount : %d\n", total);
+                break;
+
+            case 2:
+                printf("Enter the number : ");
+                scanf(" %d", &cokazero);
+                total = total + 1250*cokazero;
+                printf("Total amount : %d\n", total);
+                break;
     
-                case 3:
-                    printf("Enter the number : ");
-                    scanf(" %d", &pepsi);
-                    total = total + 1350*pepsi;
-                    printf("Total amount : %d\n", total);
-                    break;
+            case 3:
+                printf("Enter the number : ");
+                scanf(" %d", &pepsi);
+                total = total + 1350*pepsi;
+                printf("Total amount : %d\n", total);
+                break;
     
-                case 4:
-                    printf("Enter the number : ");
-                    scanf(" %d", &pepsizero);
-                    total = total + 1400*pepsizero;
-                    printf("Total amount : %d\n", total);
-                    break;
+            case 4:
+                printf("Enter the number : ");
+                scanf(" %d", &pepsizero);
+                total = total + 1400*pepsizero;
+                printf("Total amount : %d\n", total);
+                break;
     
-                default:
-                    printf("Error : Menu does not exist\n");
-                    goto choose;
-            }
+            default:
+                printf("Error : Menu does not exist\n");
+                goto loop;
         }
+    }
     
         add:
         {   
@@ -102,7 +101,7 @@ int main()
                 printf("Error : choose number 1 or 2\n");
                 goto add;
             }
-        }
+
     }
     inff:
     {
