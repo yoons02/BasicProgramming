@@ -11,7 +11,7 @@ int main()
     {
         if(i%num == 0)
         {
-            continue;
+            continue; // not print (a multiple of 'num')
         }
         else
         {

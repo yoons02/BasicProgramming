@@ -12,8 +12,8 @@ int main()
     {
         if (i%num == 0)
         {
-            i++;
-            continue;
+            i++; // caution : while statement must have increase/decrease expression first
+            continue; // when use continue statement in while statement
         }    
         printf("%d  ", i);
         i++;

@@ -6,13 +6,14 @@ int main()
     
     do
     {
-        printf("Enter the number (stop : 0): ");
+        printf("Enter the number (stop : 0): "); 
         scanf(" %d", &num);
 
         sum = 0;
         i = 1;
-        
-        if(num > 0)
+        // initial value
+
+        if(num > 0) // do while statement must have conditional statement inside
         {
             do
             {
@@ -24,7 +25,7 @@ int main()
         }
     } while(num > 0);
 
-    printf("Terminated\n");
+    printf("Terminated\n"); // (num > 0) is over
 
     return 0;
 }

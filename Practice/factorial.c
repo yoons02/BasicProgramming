@@ -1,16 +1,19 @@
 #include <stdio.h>
 
-int factorial(int);
+int factorial(int); // function declaration
 
 int main()
 {
-    int num;
+    int num, i;
 
     printf("Enter the number : ");
     scanf("%d", &num);
 
-    printf("%d! = %d", num, factorial(num));
-
+    for(i = 1; i <= num; i++)
+    {
+        printf("%d! = %d\n", i, factorial(i)); // call funtion
+    }
+        
     return 0;
 }
 
@@ -18,7 +21,7 @@ int factorial(int num)
 {
     if (num > 1)
     {
-        return num * factorial(num-1);
+        return num * factorial(num-1); // recall function
     }
     else
     {
