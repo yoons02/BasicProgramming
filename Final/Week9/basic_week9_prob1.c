@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 #define a_rowsize 3
-#define a_colsize 2
+#define a_colsize 1
 #define b_rowsize 2
 #define b_colsize 3
 
