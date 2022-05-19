@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 #define a_size 5 // define size
-#define b_size 5
+#define b_size 3
 
 int swap(int *ptrA, int *ptrB); // function declaration
 
@@ -9,7 +9,6 @@ int main()
 {
     int i, j;
     int A[a_size], B[b_size];
-    int *ptrA = &A[0], *ptrB = &B[0]; // pointer declaration
 
     if (a_size == b_size)
     {
@@ -27,7 +26,7 @@ int main()
         }
         printf("\n");
 
-        printf("Before swap Mat A, Mat B\n");
+        printf("Before swap Mat A, Mat B\n"); 
         printf("A = [ ");
 
         for (i = 0; i < a_size; i++)
@@ -46,32 +45,31 @@ int main()
 
         printf("]\n\n");
 
-        printf("%d", swap(*ptrA, *ptrB)); // swap function call
+        printf("%d", swap(A, B)); // call swap function
     }
     else
     {
-        printf("Matrix sizes are not fit\n");
+        printf("Matrix sizes are not fit\n"); // if (a_size != b_size)
     }
 } 
 
 int swap(int *ptrA, int *ptrB)
 {
-    int i, j;
-    int *temp;
+    int i, j, temp;
 
     for(i = 0; i < a_size; i++)
     {
-        *(temp + i) = *(ptrB + i);
-        *(ptrB + i) = *(ptrA + i);
-        *(ptrA + i) = *(temp + i);
-    }
+        temp = *(ptrA + i);
+        *(ptrA + i) = *(ptrB + i);
+        *(ptrB + i) = temp;
+    } // swap element
 
     printf("After swap Mat A, Mat B\n");
     printf("A = [ ");
 
     for (i = 0; i < a_size; i++)
     {
-        printf("%d", *(ptrA + i));
+        printf("%d ", *(ptrA + i)); // print Mat A element
     }
 
     printf("]\n");
@@ -80,7 +78,7 @@ int swap(int *ptrA, int *ptrB)
 
     for (i = 0; i < a_size; i++)
     {
-        printf("%d", *(ptrB + i));
+        printf("%d ", *(ptrB + i)); // print Mat B element
     }
 
     printf("]\n\n");
