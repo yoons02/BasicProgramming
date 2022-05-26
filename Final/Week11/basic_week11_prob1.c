@@ -4,7 +4,6 @@
 
 int* make_number(int lotto[]);
 int check_number(int* prize[], int* f_prize[]);
-void result(int n);
 
 int main()
 {
@@ -30,7 +29,7 @@ int main()
         printf("\n");
     } 
     
-    pnum = rand()%1000; // dram for the winner
+    pnum = rand()%1000; // draw for the winner
 
     for (i = 0; i < 7; i++)
     {
