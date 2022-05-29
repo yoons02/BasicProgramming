@@ -58,25 +58,32 @@ int main()
         printf("How many students do you want to enter? : ");
         scanf("%d", &count);
 
-        for (tot = j; tot < j + count; tot++) 
+        if ((tot + count) <= 999)
         {
-            printf("\nname[%d] : ", tot);
-            scanf("%s", person[tot].name);
+            for (tot = j; tot < j + count; tot++) 
+            {
+                printf("\nname[%d] : ", tot);
+                scanf("%s", person[tot].name);
 
-            printf("number[%d] : ", tot);
-            scanf("%s", person[tot].number);
+                printf("number[%d] : ", tot);
+                scanf("%s", person[tot].number);
 
-            printf("major[%d] : ", tot);
-            scanf("%s", person[tot].major);
+                printf("major[%d] : ", tot);
+                scanf("%s", person[tot].major);
 
-            printf("age[%d] : ", tot);
-            scanf("%s", person[tot].age);
+                printf("age[%d] : ", tot);
+                scanf("%s", person[tot].age);
 
-            printf("address[%d] : ", tot);
-            scanf("%s", person[tot].address);
+                printf("address[%d] : ", tot);
+                scanf("%s", person[tot].address);
+            }
+            j = tot - 1; // save data at next array
+            printf("\nSave complete\n");
         }
-        j = tot - 1; // save data at next array
-        printf("\nSave complete\n");
+        else
+        {
+            printf("\nError : Save up to 1000 people\n");
+        }
 
         goto loop;
     }
