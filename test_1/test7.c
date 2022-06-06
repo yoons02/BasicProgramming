@@ -2,8 +2,9 @@
 
 int main()
 {
-    int arr[5]={0};
+    int a[] = {8, 2, 8, 1, 3};
+    int *p;
+    p = &a;
 
-    arr[1] = 2;
-    printf("%d", arr[2]);
+    printf("%u", p);
 }
