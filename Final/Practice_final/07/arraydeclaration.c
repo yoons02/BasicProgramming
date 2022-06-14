@@ -5,17 +5,11 @@
 int main()
 {
     int i = 0;
-    int score[SIZE];
-
-    score[0] = 89;
-    score[1] = 98;
-    score[2] = 100;
-    score[3] = 97;
-    score[4] = 88;
+    int score[SIZE] = {89, 98, 100, 97, 88};
 
     for (i = 0; i < SIZE; i++)
     {
-        printf("%d\n", score[i]);
+        printf("%d ", score[i]);
     }
 
     return 0;

@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define a_size 5 // define size
+#define a_size 3 // define size
 #define b_size 3
 
 int swap(int *ptrA, int *ptrB); // function declaration
@@ -45,7 +45,7 @@ int main()
 
         printf("]\n\n");
 
-        printf("%d", swap(A, B)); // call swap function
+        swap(A, B); // call swap function
     }
     else
     {
